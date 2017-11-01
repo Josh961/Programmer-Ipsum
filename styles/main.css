@@ -1,3 +1,5 @@
+/* Header */
+
 header {
 	background: #2c3e50;
 	color: white;
@@ -22,10 +24,83 @@ header h1 img {
 	height: 55px;
 }
 
-body {
-}
-/*
+/* Content */
+
 #content {
+	/*background: #999;*/
+	margin: 2% 22%;
+}
+
+form {
+	max-width: 125px;
+	display: block;
+}
+
+input[type=button] {
+	padding: 16px 32px;
+	margin: 4px 2px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	outline: 0;
+	cursor: pointer;
+}
+
+#plus {
+	background-color: white;
+	color: black;
+	border: 2px solid #97cb5c;
+}
+
+#plus:hover {
+	background-color: #97cb5c;
 	color: white;
-	margin: 25% 25%;
-}*/
+}
+
+#minus {
+	background-color: white;
+	color: black;
+	border: 2px solid #00b0bb;
+}
+
+#minus:hover {
+	background-color: #00b0bb;
+	color: white;
+}
+
+#paragraph_number {
+	background: #233d50;
+	margin: 5px 27.5px;
+	color: white;
+	height: 70px;
+	width: 70px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	display: block;
+	user-select: none;
+}
+	
+
+/* Misc */	
+::selection {
+  background: #ffb7b7;
+}	
+::-moz-selection {
+  background: #ffb7b7;
+}
+		
+		
+		
+		
+		
