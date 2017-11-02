@@ -27,12 +27,15 @@ header h1 img {
 /* Content */
 
 #content {
-	/*background: #999;*/
-	margin: 2% 22%;
+	position: relative;
+	margin: 2% 25%;
+	width: 50%;
+  height: 600px;
 }
 
 form {
-	max-width: 125px;
+	max-width: 140px;
+	float: left;
 	display: block;
 }
 
@@ -87,17 +90,59 @@ input[type=button] {
 	text-align: center;
 	border: none;
 	border-radius: 50%;
-	display: block;
 	user-select: none;
 }
-	
 
-/* Misc */	
+#generate {
+	margin: 35px 0 0 0;
+	background-color: white;
+	color: black;
+	border: 2px solid #233d50;
+	height: 50px;
+	width: 96%;
+	font-size: 15px;
+	border-radius: 0%;
+}
+
+#generate:hover {
+	background-color: #233d50;
+	color: white;
+}
+
+#clipboard {
+	margin: 6px 0 0 0;
+	padding-left: 1px;
+	background-color: white;
+	color: black;
+	border: 2px solid #233d50;
+	height: 50px;
+	width: 96%;
+	font-size: 14px;
+	border-radius: 0%;
+}
+#clipboard:hover {
+	background-color: #233d50;
+	color: white;
+}
+
+#result {
+	margin: 5% 5% 5% 0;
+	margin-left: 180px;
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}	
+
+/* Misc */
+
 ::selection {
   background: #ffb7b7;
 }	
 ::-moz-selection {
   background: #ffb7b7;
+}
+br {
+	user-select: none;
 }
 		
 		
