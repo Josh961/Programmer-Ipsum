@@ -3,7 +3,9 @@ var minus = document.getElementById("minus");
 var paragraph_number = document.getElementById("paragraph_number");
 var generate = document.getElementById("generate");
 var clipboard = document.getElementById("clipboard");
+var pTag = document.getElementById("p-tag");
 var result = document.querySelector("#result");
+var ran = false;
 
 /* On click events */
 
@@ -31,6 +33,11 @@ clipboard.onclick = function() {
 	selector.select();
 	document.execCommand('copy')
   document.body.removeChild(copyText)
+};
+
+pTag.onclick = function() {
+
+
 };
 
 generate.onclick = function() {

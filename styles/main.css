@@ -30,7 +30,7 @@ header h1 img {
 	position: relative;
 	margin: 2% 25%;
 	width: 50%;
-  height: 600px;
+  	height: 600px;
 }
 
 form {
@@ -94,7 +94,7 @@ input[type=button] {
 }
 
 #generate {
-	margin: 35px 0 0 0;
+	margin: 20px 0 0 0;
 	background-color: white;
 	color: black;
 	border: 2px solid #233d50;
@@ -110,17 +110,39 @@ input[type=button] {
 }
 
 #clipboard {
+	background: url(copy.png) no-repeat;
+    background-size: 25px;
+    background-position: center;
 	margin: 6px 0 0 0;
 	padding-left: 1px;
 	background-color: white;
 	color: black;
 	border: 2px solid #233d50;
 	height: 50px;
-	width: 96%;
+	width: 46%;
 	font-size: 14px;
 	border-radius: 0%;
 }
 #clipboard:hover {
+	background: url(copy-hover.png) no-repeat;
+    background-size: 25px;
+    background-position: center;
+	background-color: #233d50;
+	color: white;
+}
+
+#p-tag {
+	margin: 7px 0 0 2px;
+	padding-left: 14px;
+	background-color: white;
+	color: black;
+	border: 2px solid #233d50;
+	height: 51px;
+	width: 46%;
+	font-size: 16px;
+	border-radius: 0%;
+}
+#p-tag:hover {
 	background-color: #233d50;
 	color: white;
 }
