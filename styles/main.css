@@ -1,173 +1,180 @@
 /* Header */
 
 header {
-	background: #2c3e50;
-	color: white;
-	padding: 25px 0;
+  background: #2c3e50;
+  color: white;
+  padding: 25px 0;
 }
 
 header h1 {
-	margin: 0;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 45px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
 }
 
-header h1 a:link, a:visited {
-	text-decoration: none;
-	color: white;
+header h1 a.one:link, a.one:visited {
+  text-decoration: none;
+  color: white;
 }
 
 header h1 img {
-	padding-right: 10px;
-	width: 70px;
-	height: 55px;
+  padding-right: 10px;
+  width: 70px;
+  height: 55px;
 }
 
 /* Content */
 
 #content {
-	position: relative;
-	margin: 2% 25%;
-	width: 50%;
-  	height: 600px;
+  position: relative;
+  margin: 2% 25%;
+  width: 50%;
+    height: 600px;
 }
 
 form {
-	max-width: 140px;
-	float: left;
-	display: block;
+  max-width: 140px;
+  float: left;
+  display: block;
+  user-select: none;
 }
 
 input[type=button] {
-	padding: 16px 32px;
-	margin: 4px 2px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 70px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	height: 125px;
-	width: 125px;
-	border-radius: 50%;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	outline: 0;
-	cursor: pointer;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  outline: 0;
+  cursor: pointer;
 }
 
 #plus {
-	background-color: white;
-	color: black;
-	border: 2px solid #97cb5c;
+  background-color: white;
+  color: black;
+  border: 2px solid #97cb5c;
 }
 
 #plus:hover {
-	background-color: #97cb5c;
-	color: white;
+  background-color: #97cb5c;
+  color: white;
 }
 
 #minus {
-	background-color: white;
-	color: black;
-	border: 2px solid #00b0bb;
+  background-color: white;
+  color: black;
+  border: 2px solid #00b0bb;
 }
 
 #minus:hover {
-	background-color: #00b0bb;
-	color: white;
+  background-color: #00b0bb;
+  color: white;
 }
 
 #paragraph_number {
-	background: #233d50;
-	margin: 5px 27.5px;
-	color: white;
-	height: 70px;
-	width: 70px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
-	border: none;
-	border-radius: 50%;
-	user-select: none;
+  background: #233d50;
+  margin: 5px 27.5px;
+  color: white;
+  height: 70px;
+  width: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  user-select: none;
 }
 
 #generate {
-	margin: 20px 0 0 0;
-	background-color: white;
-	color: black;
-	border: 2px solid #233d50;
-	height: 50px;
-	width: 96%;
-	font-size: 15px;
-	border-radius: 0%;
+  margin: 20px 0 0 0;
+  background-color: white;
+  color: black;
+  border: 2px solid #233d50;
+  height: 50px;
+  width: 96%;
+  font-size: 15px;
+  border-radius: 0%;
 }
 
 #generate:hover {
-	background-color: #233d50;
-	color: white;
+  background-color: #233d50;
+  color: white;
 }
 
 #clipboard {
-	background: url(copy.png) no-repeat;
+  background: url('../images/copy.png') no-repeat;
     background-size: 25px;
     background-position: center;
-	margin: 6px 0 0 0;
-	padding-left: 1px;
-	background-color: white;
-	color: black;
-	border: 2px solid #233d50;
-	height: 50px;
-	width: 46%;
-	font-size: 14px;
-	border-radius: 0%;
+  margin: 6px 0 0 0;
+  padding-left: 1px;
+  background-color: white;
+  color: black;
+  border: 2px solid #233d50;
+  height: 50px;
+  width: 46%;
+  font-size: 14px;
+  border-radius: 0%;
 }
 #clipboard:hover {
-	background: url(copy-hover.png) no-repeat;
+  background: url('../images/copy-hover.png') no-repeat;
     background-size: 25px;
     background-position: center;
-	background-color: #233d50;
-	color: white;
+  background-color: #233d50;
+  color: white;
 }
 
 #p-tag {
-	margin: 7px 0 0 2px;
-	padding-left: 14px;
-	background-color: white;
-	color: black;
-	border: 2px solid #233d50;
-	height: 51px;
-	width: 46%;
-	font-size: 16px;
-	border-radius: 0%;
+  margin: 7px 0 0 2px;
+  padding-left: 14px;
+  background-color: white;
+  color: black;
+  border: 2px solid #233d50;
+  height: 51px;
+  width: 46%;
+  font-size: 16px;
+  border-radius: 0%;
 }
 #p-tag:hover {
-	background-color: #233d50;
-	color: white;
+  background-color: #233d50;
+  color: white;
 }
 
 #result {
-	margin: 5% 5% 5% 0;
-	margin-left: 180px;
-	position: absolute;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-}	
+  margin: 5% 5% 5% 0;
+  margin-left: 180px;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+} 
+
+/* Footer */
+
+footer a {
+  text-decoration: none;
+  color: black;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* Misc */
 
 ::selection {
   background: #ffb7b7;
-}	
+} 
 ::-moz-selection {
   background: #ffb7b7;
 }
 br {
-	user-select: none;
+  user-select: none;
 }
-		
-		
-		
-		
-		
