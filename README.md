@@ -1,2 +1,4 @@
 # Programmer-Ipsum
-Dummy text for programmers
+A clean, simple Lorem Ipsum generator for programmers.
+
+Vanilla HTML, CSS, and Javascript.
