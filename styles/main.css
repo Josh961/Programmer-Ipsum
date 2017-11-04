@@ -37,7 +37,9 @@ form {
   max-width: 140px;
   float: left;
   display: block;
-  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 input[type=button] {
@@ -91,7 +93,9 @@ input[type=button] {
   text-align: center;
   border: none;
   border-radius: 50%;
-  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #generate {
@@ -176,5 +180,7 @@ footer a {
   background: #ffb7b7;
 }
 br {
-  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
