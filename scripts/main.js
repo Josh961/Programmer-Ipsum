@@ -9,7 +9,7 @@ var fullText = [];
 var currParagraph = [];
 var ran = 0;
 
-/* On click events */
+/* On click events. */
 
 plus.onclick = function() {
   if (paragraph_number.value < 10) {
@@ -75,7 +75,7 @@ generate.onclick = function() {
   }
 };
 
-/* Get the random paragraphs */
+/* Get the random paragraphs. */
 
 function getParagraph() {
   var paragraph = [];
@@ -92,7 +92,7 @@ function getRandomPhrase() {
   return phrases[index];
 }
 
-/* Phrases to generate lorem ipsum */
+/* Phrases to generate lorem ipsum. */
 
 var phrases = [
     "When in doubt, use brute force.",
@@ -179,4 +179,10 @@ var phrases = [
     "How many Javascript frameworks are there?",
     "Ruby on Rails.",
     "Check out my Github.",
+    "Junior developer role. Required: minimum 5 years experience as a senior developer.",
+    "Fast paced agile development team.",
+    "Bleeding edge.",
+    "So, are you more front-end or back-end? Actually, I'm fullstack.",
+    "SASS or CSS first?",
+    "CSS Grid is the bees knees."
 ];

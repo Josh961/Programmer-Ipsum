@@ -1,29 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Programmer Ipsum</title>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110184527-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-  </head>
-  <body>
-    <header>
-      <h1><a href="index.html"><img src="images/computer.png" alt="Computer Icon"></a><a class="one" href="index.html">Programmer Ipsum</a></h1>
-    </header>
-    <div id="content">
-      <form>
-        <input type="button" id="plus" value="+">
-        <input type="text" id="paragraph_number" value="3" readonly>
-        <input type="button" id="minus" value="-">
-        <input type="button" id="generate" value="Run Code">
-        <input type="button" id="clipboard" value="">
-        <input type="button" id="p-tag" value="</p>">
-      </form>
-      <div id="result"></div>
-    </div>
-    <footer><a href="https://github.com/Josh961/Programmer-Ipsum">GitHub</a></footer>
+    gtag('config', 'UA-110184527-3');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Programmer Ipsum</title>
 
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="images/computer.png" alt="Computer Icon"></a><a class="one" href="index.html">Programmer Ipsum</a></h1>
+  </header>
+
+  <div class="container">
+    <form>
+      <input type="button" id="plus" class="circle-btn" value="+">
+      <input type="text" id="paragraph_number" value="3" readonly>
+      <input type="button" id="minus" class="circle-btn" value="-">
+      <div class="btn-wrapper">
+        <input type="button" id="generate" class="square-btn" value="Run Code">
+        <input type="button" id="clipboard" class="square-btn" value="">
+        <input type="button" id="p-tag" class="square-btn" value="</p>">
+      </div>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <footer>
+    <a href="https://github.com/Josh961/Programmer-Ipsum">GitHub</a>
+  </footer>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
 </html>

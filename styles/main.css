@@ -1,4 +1,27 @@
-/* Header */
+/* ========================================================
+   Global Styles
+   ======================================================== */
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+br {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+::selection {
+  background: #ffb7b7;
+} 
+::-moz-selection {
+  background: #ffb7b7;
+}
+
+/* ========================================================
+   Header
+   ======================================================== */
 
 header {
   background: #2c3e50;
@@ -9,7 +32,6 @@ header {
 header h1 {
   margin: 0;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   font-size: 45px;
 }
 
@@ -24,34 +46,41 @@ header h1 img {
   height: 55px;
 }
 
-/* Content */
+/* ========================================================
+   Main content
+   ======================================================== */
 
-#content {
-  position: relative;
-  margin: 2% 25%;
-  width: 50%;
-    height: 600px;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 
+    "side main";
+  
+  width: 1200px;
+  margin: 50px auto;
 }
 
+/* Side Buttons
+   ======================================================== */
+
 form {
-  max-width: 140px;
-  float: left;
-  display: block;
+  grid-area: side;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
 
-input[type=button] {
-  padding: 16px 32px;
-  margin: 4px 2px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
+/* Buttons to increment and decrement paragraph counter */
+
+.circle-btn {
+  display: block;
   height: 125px;
   width: 125px;
+  padding: 16px 32px;
+  margin: 4px auto;
+  font-size: 70px;
+  text-align: center;
+  text-decoration: none;
   border-radius: 50%;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -60,34 +89,34 @@ input[type=button] {
 }
 
 #plus {
-  background-color: white;
   color: black;
+  background-color: white;
   border: 2px solid #97cb5c;
 }
 
 #plus:hover {
-  background-color: #97cb5c;
   color: white;
+  background-color: #97cb5c;
 }
 
 #minus {
-  background-color: white;
   color: black;
+  background-color: white;
   border: 2px solid #00b0bb;
 }
 
 #minus:hover {
-  background-color: #00b0bb;
   color: white;
+  background-color: #00b0bb;
 }
 
 #paragraph_number {
-  background: #233d50;
-  margin: 5px 27.5px;
-  color: white;
+  display: block;
   height: 70px;
   width: 70px;
-  font-family: 'Montserrat', sans-serif;
+  margin: 5px auto;
+  color: white;
+  background: #233d50;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -98,89 +127,77 @@ input[type=button] {
   -ms-user-select: none;
 }
 
-#generate {
-  margin: 20px 0 0 0;
-  background-color: white;
-  color: black;
-  border: 2px solid #233d50;
-  height: 50px;
-  width: 96%;
-  font-size: 15px;
-  border-radius: 0%;
+/* Three buttons under the large circle buttons */
+
+.btn-wrapper {
+  width: 125px;
+  margin: 0 auto;
 }
 
-#generate:hover {
-  background-color: #233d50;
+.square-btn {
+  display: block;
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  border: 2px solid #233d50;
+  border-radius: 0%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.square-btn:hover {
   color: white;
+  background-color: #233d50;
+}
+
+#generate {
+  display: block;
+  width: inherit;
+  padding: 15px 0;
+  margin: 20px auto 0;
 }
 
 #clipboard {
+  float: left;
+  width: 60px;
+  padding: 15px 0;
+  margin: 5px 0;
   background: url('../images/copy.png') no-repeat;
-    background-size: 25px;
-    background-position: center;
-  margin: 6px 0 0 0;
-  padding-left: 1px;
-  background-color: white;
-  color: black;
-  border: 2px solid #233d50;
-  height: 50px;
-  width: 46%;
-  font-size: 14px;
-  border-radius: 0%;
+  background-size: 25px;
+  background-position: center;
 }
 #clipboard:hover {
   background: url('../images/copy-hover.png') no-repeat;
-    background-size: 25px;
-    background-position: center;
-  background-color: #233d50;
+  background-size: 25px;
+  background-position: center;
   color: white;
+  background-color: #233d50;
 }
 
 #p-tag {
-  margin: 7px 0 0 2px;
-  padding-left: 14px;
-  background-color: white;
-  color: black;
-  border: 2px solid #233d50;
-  height: 51px;
-  width: 46%;
-  font-size: 16px;
-  border-radius: 0%;
-}
-#p-tag:hover {
-  background-color: #233d50;
-  color: white;
+  float: right;
+  width: 60px;
+  padding: 15px 0;
+  margin: 5px 0;
 }
 
+/* Generated Results
+   ======================================================== */
+
 #result {
-  margin: 5% 5% 5% 0;
-  margin-left: 180px;
-  position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  grid-area: main;
   font-size: 20px;
 } 
 
-/* Footer */
+/* ========================================================
+   Footer
+   ======================================================== */
 
 footer a {
-  text-decoration: none;
-  color: black;
   position: fixed;
   bottom: 10px;
   right: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Misc */
-
-::selection {
-  background: #ffb7b7;
-} 
-::-moz-selection {
-  background: #ffb7b7;
-}
-br {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  color: black;
+  text-decoration: none;
 }
